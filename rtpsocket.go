@@ -1,7 +1,6 @@
 package rtpsocketgo
 
 import (
-	"log"
 	"net"
 
 	"github.com/pion/rtp"
@@ -60,8 +59,6 @@ func (s *RtpSocket) ReadRtpPacket() (*rtp.Packet, error) {
 	if err != nil {
 		return nil, err
 	}
-
-	log.Println(n)
 
 	rtpPacket := rtp.Packet{}
 
