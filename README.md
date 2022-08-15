@@ -22,9 +22,8 @@ import (
 
 func main() {
 	rtpSocket, err := rtpsocket.Connect(rtpsocket.Config{
-		Address:               "127.0.0.1:7777",
-		CorrectRtpPayloadType: 96,	  // h264 payload
-		UdpSocketMtuBytes:     1500,
+		Address:           "127.0.0.1:5500",
+		UdpSocketMtuBytes: 1500,
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -46,5 +45,4 @@ func main() {
 
 	select {}
 }
-
 ```
