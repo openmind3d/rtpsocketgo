@@ -1,4 +1,6 @@
 # Changelog
+## [v0.2.1]
+- fix handing incorrect packet
 ## [v0.2.0]
 - adding rtp fanout
 ## [v0.1.1]

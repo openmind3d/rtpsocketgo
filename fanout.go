@@ -35,6 +35,7 @@ func NewFanoutFromSock(sock *RtpSocket) *RtpFanout {
 					f.closeCh <- struct{}{}
 					return
 				}
+				continue
 			}
 			if rtpPacket != nil {
 				inRtpPkt <- rtpPacket
